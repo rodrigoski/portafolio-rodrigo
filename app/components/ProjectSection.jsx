@@ -157,8 +157,8 @@ export default function ProjectSection() {
                   ))}
                 </div>
                 <a
-                  href={project.demoUrl}
                   className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors"
+                  href="https://mail.google.com/mail/u/0/#inbox"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

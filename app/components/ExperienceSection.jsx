@@ -6,28 +6,28 @@ import { Briefcase, Calendar } from "lucide-react"
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Desarrollador Frontend Senior",
-      company: "Tech Innovations Inc.",
-      period: "Enero 2022 - Presente",
+      title: "Intership backend developer Nest.js",
+      company: "GPT 4 sales.ai",
+      period: "September 2024-December 2024",
       description:
-        "Desarrollo de aplicaciones web utilizando React y Next.js. Implementación de diseños responsivos y optimización de rendimiento. Colaboración con equipos de diseño y backend para crear soluciones integrales.",
-      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+        "Desarrollo integral de ChatBots usando Node.js, python y JavaScript.",
+      technologies: ["Node.js", "JavaScript", "Python"],
     },
     {
-      title: "Desarrollador Web Full Stack",
-      company: "Digital Solutions",
-      period: "Marzo 2020 - Diciembre 2021",
+      title: "Quality Assurance",
+      company: "Scale",
+      period: "Marzo 2023 - Enero 2025",
       description:
-        "Desarrollo de aplicaciones web completas desde el frontend hasta el backend. Implementación de APIs RESTful y bases de datos. Mantenimiento y mejora de aplicaciones existentes.",
-      technologies: ["Vue.js", "Node.js", "Express", "MongoDB"],
+        "Pruebas de manejo de prompts, generación y evelacuión de propmts, marcado 3D",
+      technologies: ["Lidar", "AI trainning"],
     },
     {
-      title: "Desarrollador Frontend Junior",
-      company: "Creative Web Agency",
-      period: "Junio 2018 - Febrero 2020",
+      title: "Web Developer",
+      company: "MayanSoft",
+      period: "Enero 2025 - Presente",
       description:
-        "Desarrollo de interfaces de usuario para sitios web y aplicaciones. Colaboración con diseñadores para implementar diseños fieles a las maquetas. Optimización de sitios web para dispositivos móviles.",
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+        "Desarrollo y mantenimiento de herramientas internas, así como creación de LP y mantenimiento de páginas.",
+      technologies: ["C#", "Wordpress", "HTML", "CSS", "JavaScript"],
     },
   ]
 
@@ -43,7 +43,7 @@ export default function ExperienceSection() {
         >
           <h2 className="text-4xl font-bold text-white mb-4">Mi Experiencia</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Un recorrido por mi trayectoria profesional y los roles que he desempeñado
+            Un recorrido por mi trayectoria profesional y los roles que he desempeñado.
           </p>
         </motion.div>
 
