@@ -69,7 +69,7 @@ export default function HeroComponent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Carlos Rodrigo Rojas González
+            Mi Portafolio Creativo
           </motion.h1>
 
           <motion.p
@@ -78,7 +78,7 @@ export default function HeroComponent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Desarrollador web.
+            Desarrollador web especializado en crear experiencias digitales únicas e interactivas
           </motion.p>
 
           <motion.div
@@ -102,7 +102,6 @@ export default function HeroComponent() {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
-        onClick={() => document.getElementById("proyectos").scrollIntoView({ behavior: "smooth" })}
       >
         <ArrowDown className="text-white h-8 w-8 opacity-70" />
       </motion.div>
