@@ -69,7 +69,7 @@ export default function HeroComponent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Carlos Rodrigo Rojas González
+            Carlos Rodrigo Rojas Gonzálezz
           </motion.h1>
 
           <motion.p
