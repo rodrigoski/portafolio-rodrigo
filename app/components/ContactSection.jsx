@@ -74,7 +74,7 @@ export default function ContactSection() {
     {
       icon: <MapPin className="h-6 w-6 text-cyan-400" />,
       title: "Ubicación",
-      value: "Mérida,Yucatán",
+      value: "Mérida,Yucatán,México",
       link: "https://maps.google.com/?q=Madrid,España",
     },
   ]
