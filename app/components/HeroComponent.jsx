@@ -90,7 +90,7 @@ export default function HeroComponent() {
           >
 
                       {/* Avatar/Imagen Evangelion */}
-                      <Image src="/evengalion-Photoroom.png" alt="Evangelion" width={400} height={400} />
+                      <Image src="/evengalion-Photoroom.png" alt="Evangelion" width={300} height={300} />
 
             <Button
               onClick={() => document.getElementById("proyectos").scrollIntoView({ behavior: "smooth" })}
