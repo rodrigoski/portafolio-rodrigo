@@ -89,8 +89,8 @@ export default function HeroComponent() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
 
-                      {/* Avatar/Imagen Evangelion */}
-                      <Image src="/evengalion-Photoroom.png" alt="Evangelion" width={300} height={300} />
+        {/* Avatar/Imagen Evangelion */}
+        <Image src="/evengalion-Photoroom.png" alt="Evangelion" width={300} height={300} />
 
             <Button
               onClick={() => document.getElementById("proyectos").scrollIntoView({ behavior: "smooth" })}

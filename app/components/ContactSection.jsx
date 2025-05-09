@@ -62,19 +62,19 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-6 w-6 text-cyan-400" />,
       title: "Email",
-      value: "contacto@miportfolio.com",
-      link: "mailto:contacto@miportfolio.com",
+      value: "rodrigorojad844@gamil.com",
+      link: "mailto:rodrigorojad844@gamil.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-cyan-400" />,
       title: "Teléfono",
-      value: "+34 123 456 789",
-      link: "tel:+34123456789",
+      value: "+52 9993840872",
+      link: "tel:+52 9993840872",
     },
     {
       icon: <MapPin className="h-6 w-6 text-cyan-400" />,
       title: "Ubicación",
-      value: "Madrid, España",
+      value: "Mérida, Yucatán",
       link: "https://maps.google.com/?q=Madrid,España",
     },
   ]
