@@ -12,39 +12,39 @@ export default function ProjectSection() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Moderno",
-      description: "Plataforma de comercio electrónico con diseño responsivo y experiencia de usuario optimizada.",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "API-S-user-s-student-s-etc",
+      description: "Mi primera API creada con flask-python.",
+      image: "/grillz.jpg",
       category: "web",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["Python", "Flask"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/rodrigoski/API-S-user-s-student-s-etc",
     },
     {
       id: 2,
-      title: "App de Gestión de Tareas",
-      description: "Aplicación móvil para organizar tareas con notificaciones y sincronización en la nube.",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "visual-front-wikitek-v2.0",
+      description: "La obra maestra, la visualización de mi Frontend y mi Backend conectada a una db",
+      image: "/lentes.jpg",
       category: "móvil",
-      technologies: ["React Native", "Firebase"],
+      technologies: ["React", "CSS", "HTML", "JavaScript"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/rodrigoski/visual-front-wikitek-v2.0",
     },
     {
       id: 3,
-      title: "Dashboard Analítico",
-      description: "Panel de control interactivo para visualización de datos empresariales en tiempo real.",
-      image: "/placeholder.svg?height=600&width=800",
+      title: "Web de películas",
+      description: "Sencilla web de películas.",
+      image: "/data2.jpg",
       category: "web",
-      technologies: ["Vue.js", "D3.js", "Express"],
+      technologies: ["JavaScript", "HTML", "SCSS"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/rodrigoski/Peliculas",
     },
     {
       id: 4,
       title: "Rediseño de Marca",
       description: "Renovación completa de identidad visual para empresa de tecnología emergente.",
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/fondo2.jpg",
       category: "diseño",
       technologies: ["Figma", "Illustrator", "Photoshop"],
       demoUrl: "#",
@@ -169,19 +169,20 @@ export default function ProjectSection() {
           ))}
         </div>
 
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <button
-            className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white rounded-md font-medium"
-          >
-            Ver todos los proyectos
-          </button>
-        </motion.div>
+<motion.div
+  className="text-center mt-12"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+>
+  <button
+    className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white rounded-md font-medium transition-all duration-300 hover:shadow-lg"
+    onClick={() => window.open('https://github.com/rodrigoski', '_blank', 'noopener,noreferrer')}
+  >
+    Ver todos los proyectos
+  </button>
+</motion.div>
       </div>
     </section>
   )

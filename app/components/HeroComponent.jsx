@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const Button = ({ children, className, ...props }) => (
   <button 
-    className={`bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium px-8 py-3 rounded-full ${className}`} 
+    className={`bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium px-8 py-3 rounded-full transition-all duration-300 ${className}`} 
     {...props}
   >
     {children}
@@ -18,17 +18,14 @@ export default function HeroComponent() {
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
-
+    const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Fondo animado */}
+      {/* Fondo animado con burbujas flotantes */}
       <div className="absolute inset-0 bg-gradient-to-b from-black to-slate-900">
         <div className="absolute inset-0 opacity-20">
           {Array.from({ length: 20 }).map((_, i) => {
@@ -57,7 +54,7 @@ export default function HeroComponent() {
         </div>
       </div>
 
-      {/* Contenido principal con imagen */}
+      {/* Contenido principal */}
       <div className="container px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,42 +77,61 @@ export default function HeroComponent() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Desarrollador web apasionado por crear experiencias digitales impactantes
+            Desarrollador web
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col items-center gap-8"
           >
-
-        {/* Avatar/Imagen Evangelion */}
-        <Image src="/evengalion-Photoroom.png" alt="Evangelion" width={300} height={300} />
-
-            <Button
-              onClick={() => document.getElementById("proyectos").scrollIntoView({ behavior: "smooth" })}
-              className="group"
-            >
-              <span className="flex items-center gap-2">
-                Ver mi trabajo
-                <ArrowDown className="h-4 w-4 group-hover:translate-y-1 transition-transform" />
-              </span>
-            </Button>
+            {/* Imagen con efecto de hover */}
+ <Image 
+  src="/evengalion-Photoroom.png" 
+  alt="Data analytics" 
+  width={300} 
+  height={250}
+  className="object-cover transition-all duration-500 ease-in-out 
+            grayscale brightness-100 contrast-100 rounded-lg
+            hover:grayscale-0 hover:brightness-100 hover:contrast-100 
+            hover:scale-105 cursor-pointer"
+   onClick={() => document.getElementById("contacto").scrollIntoView({ 
+    behavior: "smooth",
+    block: "start"
+  })}
+/>
+            {/* Botón con margen ajustado */}
+            <div className="mt-2">            
+              <Button
+                onClick={() => document.getElementById("experiencia").scrollIntoView({ 
+                  behavior: "smooth",
+                  block: "start"
+                })}
+                className="group hover:shadow-2xl"
+              >
+                <span className="flex items-center gap-2">
+                  Mi experiencia
+                  <ArrowDown className="h-4 w-4 group-hover:translate-y-1 transition-transform" />
+                </span>
+              </Button>
+            </div>
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Flecha indicadora de scroll */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5 }}
-        onClick={() => document.getElementById("proyectos").scrollIntoView({ behavior: "smooth" })}
-      >
-        <div className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
-          <ArrowDown className="text-white h-6 w-6" />
-        </div>
-      </motion.div>
+      {/* Flecha de scroll animada */}
+<motion.div
+  className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer mt-8"
+  onClick={() => document.getElementById("proyectos").scrollIntoView({ 
+    behavior: "smooth",
+    block: "start"
+  })}
+>
+  <div className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+    <ArrowDown className="text-white h-5 w-5" />
+  </div>
+</motion.div>
     </section>
   )
 }

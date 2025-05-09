@@ -62,19 +62,19 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-6 w-6 text-cyan-400" />,
       title: "Email",
-      value: "rodrigorojad844@gamil.com",
-      link: "mailto:rodrigorojad844@gamil.com",
+      value: "rodrigorojad844@gmail.com",
+      link: "mailto:rodrigorojad844@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-cyan-400" />,
       title: "Teléfono",
       value: "+52 9993840872",
-      link: "tel:+52 9993840872",
+      link: "tel:+529993840872",
     },
     {
       icon: <MapPin className="h-6 w-6 text-cyan-400" />,
       title: "Ubicación",
-      value: "Mérida, Yucatán",
+      value: "Mérida,Yucatán,México",
       link: "https://maps.google.com/?q=Madrid,España",
     },
   ]
